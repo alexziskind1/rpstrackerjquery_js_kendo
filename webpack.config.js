@@ -8,8 +8,8 @@ module.exports = {
   entry: {
     index: "./src/index.js",
     dashboard: "./src/page-dashboard/index.js",
-    backlog: "./src/page-backlog/index.js",
-    detail: "./src/page-detail/index.js",
+    //backlog: "./src/page-backlog/index.js",
+    //detail: "./src/page-detail/index.js",
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
