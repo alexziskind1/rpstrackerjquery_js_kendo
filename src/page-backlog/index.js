@@ -143,9 +143,9 @@ $(() => {
         field: "priority",
         title: "Priority",
         template: getPriorityCellMarkup,
-        width: 100,
+        width: 120,
       },
-      { field: "estimate", title: "Estimate", width: 100 },
+      { field: "estimate", title: "Estimate", width: 130 },
       {
         field: "dateCreated",
         title: "Created",
