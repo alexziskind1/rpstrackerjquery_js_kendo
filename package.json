@@ -1,0 +1,33 @@
+{
+  "name": "rpstrackerkendoui",
+  "version": "1.0.0",
+  "dependencies": {
+    "@progress/kendo-ui": "2020.2.617",
+    "bootstrap": "4.3.1",
+    "jquery": "3.5.1",
+    "popper.js": "^1.16.1",
+    "rxjs": "6.6.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0",
+    "copyfiles": "2.3.0",
+    "css-loader": "4.2.2",
+    "file-loader": "6.1.0",
+    "style-loader": "1.2.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0",
+    "webpack-node-externals": "2.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "copyfiles -u 1 ./src/styles.css ./src/index.html ./src/assets/**/*.* ./dist",
+    "build": "webpack && npm run copy",
+    "watch": "webpack --watch",
+    "start": "npm run copy && webpack-dev-server --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "description": ""
+}
